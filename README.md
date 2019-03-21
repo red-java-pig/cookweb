@@ -1,1 +1,12 @@
 # cookweb
+- html
+- css
+- javascript
+- dom
+- json
+- ajax
+- jquery
+- bootstrap
+- vue.js
+- node.js
+- webpack
