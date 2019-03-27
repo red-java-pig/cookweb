@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex46</title>
+    <script>
+        function p(s) {
+            document.write(s);
+            document.write("<br>");
+        }
+
+        var x = new Array(3, 1, 4);
+        p('当前数组是:' + x);
+        p("使用普通的for循环遍历数组");
+        for (i = 0; i < x.length; i++) { //普通for循环
+            p(x[i]);
+        }
+        p("使用增强for循环遍历数组");
+        for (i in x) { //for in 循环
+            p(x[i]);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
