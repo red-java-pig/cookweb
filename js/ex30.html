@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex29</title>
+    <script>
+        var a = 0; //定义在函数前面，即全局变量，所有函数都可以访问
+
+        function f1() {
+            document.write('通过函数f1 设置全局变量a的值 为 5');
+            a = 5; //能够访问
+        }
+
+        function f2() {
+            document.write('通过函数f2 访问并打印全局变量a的值 ' + a); //能够访问
+        }
+
+        f1(); //通过f1，设置a的值
+        document.write('<br>');
+        f2(); //通过f2,  打印a的值
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
