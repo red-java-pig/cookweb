@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex19</title>
+    <script>
+        document.write("字符串的\"10\"转换为数字的:" + parseInt("10")); //转换整数
+        document.write("<br>");
+        document.write("字符串的\"3.14\"转换为数字的:" + parseFloat("3.14")); //转换浮点数
+        document.write("<br>");
+        document.write("字符串的\"10abc\"转换为数字的:" + parseInt("10abc")); //判断每一位，直到发现不是数字的那一位
+        document.write("<br>");
+        document.write("字符串的\"10abc8\"转换为数字的:" + parseInt("10abc")); //判断每一位，直到发现不是数字的那一位
+        document.write("<br>");
+
+        document.write("字符串的\"hello javascript\"转换为数字的:" + parseInt("hello javascript")); //如果完全不包含数字，则返回NaN - Not a Number
+        document.write("<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
