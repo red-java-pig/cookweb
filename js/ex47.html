@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex47</title>
+    <script>
+        function p(s) {
+            document.write(s);
+            document.write("<br>");
+        }
+
+        document.write("使用for循环打印 0 到 4<br>如果发现是3，就<span style='color:red'>放弃本次循环，并且进入下一次</span>循环<br>");
+
+        for (i = 0; i < 5; i++) {
+            if (i == 3)
+                continue;
+            p(i);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
