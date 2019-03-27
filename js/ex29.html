@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex29</title>
+    <script>
+        function f1(a) {
+            document.write('参数的作用域在函数以内，其值是 ' + a); //参数a的作用范围，所以打印出来是5；
+        }
+
+        function f2() {
+            document.write('在函数里不能访问其他函数的参数' + a); //不在参数a的作用范围，是一个未声明的变量，无法打印
+        }
+
+        f1(5);
+        f2();
+        document.write('在函数外也不能访问' + a); //也不在参数a的作用范围，是一个未声明的变量，无法打印
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
