@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex26</title>
+    <script>
+        function get() {
+            var value = parseInt(document.getElementById("num1").value);
+            document.getElementById("result").value = "从num1中取到的值:" + value;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="num1" value="1">
+    <br>
+    <input type="text" id="result" value="">
+    <br>
+    <input type="button" value="取值" onclick="get()">
+</body>
+
+</html>
