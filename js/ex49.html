@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex49</title>
+    <script>
+        document.write("试图调用不存在的函数f2()就会报错，并且导致javascript中止执行，后面的代码也不会执行了");
+
+        function f1() {
+            //函数f1是存在的
+        }
+        f2(); //调用不存在的函数f2();
+        document.write("剩下的代码");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
