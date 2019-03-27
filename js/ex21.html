@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex21</title>
+    <script>
+        document.write("通过Number() 函数转换字符串'123' 后得到的数字：" + Number("123")); //正常的
+        document.write("<br>");
+        document.write("通过Number() 函数转换字符串'123abc' 后得到的数字：" + Number("123abc")); //包含非数字
+        document.write("<br>");
+        document.write("通过Number() 函数转换字符串'abc123' 后得到的数字：" + Number("abc123")); //包含非数字
+        document.write("<br>");
+
+        document.write("通过parseInt() 函数转换字符串'123' 后得到的数字：" + parseInt("123")); //正常的
+        document.write("<br>");
+        document.write("通过parseInt() 函数转换字符串'123abc' 后得到的数字：" + parseInt("123abc")); //包含非数字,返回开头的合法数字部分
+        document.write("<br>");
+        document.write("通过parseInt() 函数转换字符串'abc123' 后得到的数字：" + parseInt("abc123")); //包含非数字,以非数字开头，返回NaN
+        document.write("<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
