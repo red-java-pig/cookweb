@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex52</title>
+    <script>
+        function p(s) {
+            document.write(s);
+            document.write("<br>");
+        }
+        //示例1：创建一个数字对象 
+        var x = new Number(123);
+        document.write('示例1<br>');
+        document.write('数字对象x的值:' + x);
+        document.write("<br>");
+        document.write('数字对象x的类型:' + typeof x); //通过typeof 获知这是一个object
+        document.write("<br>");
+        var y = 123;
+        document.write('基本类型y的值:' + y);
+        document.write("<br>");
+        document.write('基本类型y的类型:' + typeof y); //通过typeof 获知这是一个number
+        document.write('<br><br>');
+
+        //示例2：最小值 最大值 
+        document.write('示例2<br>');
+        document.write('Number对象的最小值:' + Number.MIN_VALUE);
+        document.write("<br>");
+        document.write('Number对象的最大值:' + Number.MAX_VALUE);
+        document.write('<br><br>');
+
+        //示例 3 : 表示不是数字
+        document.write('示例3<br>');
+        var a = new Number("123abc"); //通过非数字创建Number对象，得到的是一个NaN
+        p('通过非数字字符串"123abc"创建出来的Number对象 a的值是：' + a);
+        p('但是, a==Number.NaN会返回:' + (a == Number.NaN)); //即便是一个NaN 也"不等于" Number.NaN
+        p('正确判断是否是NaN的方式是调用isNaN函数:' + isNaN(a)); //正确的方式是通过isNaN() 函数进行判断
+        document.write('<br>');
+
+        //示例 4 : 返回一个数字的小数表达 
+        document.write('示例4<br>');
+        var a = new Number("123");
+        p("数字对象123通过toFixed(2) 保留两位小数:" + a.toFixed(2)); //保留两位小数点
+        var b = new Number("3.1415926");
+        p("PI 通过toFixed(3) 保留三位小数:" + b.toFixed(3)); //保留三位小数点
+        document.write('<br>');
+
+        //示例 5 : 返回一个数字的科学计数法表达 
+        document.write('示例5<br>');
+        var a = new Number("123");
+        p("数字对象123通过toExponential 返回计数法表达 " + a.toExponential());
+        var b = new Number("3.1415926");
+        p("数字对象3.1415926通过toExponential 返回计数法表达 " + b.toExponential());
+        document.write('<br>');
+
+        //示例 6 : 返回一个数字对象的基本数字类型
+        document.write('示例6<br>');
+        var a = new Number("123");
+        var b = a.valueOf();
+        p('数字对象a的类型是: ' + typeof a); //返回object
+        p('通过valueOf()返回的值的类型是' + typeof b); //返回number
+        document.write('<br>');
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
