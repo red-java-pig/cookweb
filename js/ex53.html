@@ -5,27 +5,86 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>ex53</title>
     <script>
-        function addCalc() {
-            var v1 = parseInt(document.getElementById("num1").value);
-            var v2 = parseInt(document.getElementById("num2").value);
-            document.getElementById("result").value = (v1 * v2).toExponential();
+        function p(s) {
+            document.write(s);
+            document.write("<br>");
         }
+        //示例 1 : 创建字符串对象
+        document.write('示例 1 : 创建字符串对象<br>');
+        var a = "5";
+        var b = new String(a);
+        document.write("变量a的值是:" + a);
+        document.write("<br>");
+        document.write("变量a的类型是:" + (typeof a));
+        document.write("<br>");
+        document.write("变量b的值是:" + b);
+        document.write("<br>");
+        document.write("变量b的类型是:" + (typeof b));
+        document.write('<br><br>');
+
+        //示例 2 : 字符串长度
+        document.write('示例 2 : 字符串长度<br>');
+        var c = new String("Hello JavaScript");
+        document.write("通过.length属性获取字符串'Hello JavaScript'的长度" + c.length);
+        document.write('<br><br>');
+
+        //示例 3 : 返回指定位置的字符
+        document.write('示例 3 : 返回指定位置的字符<br>');
+        var d = new String("Hello JavaScrpt");
+        document.write("字符串d的值:" + d);
+        document.write("<br>");
+        document.write('通过 charAt(0)获取位置0的字符串： ' + d.charAt(0)); //返回H
+        document.write("<br>");
+        document.write('通过 charCodeAt(0)获取位置0的字符的 Unicode码 ：' + d.charCodeAt(0)); //返回H对应的Unicode码 72
+        document.write('<br><br>');
+
+        //示例 4 : 字符串拼接
+        document.write('示例 4 : 字符串拼接<br>');
+        var e = new String("Hello ");
+        var f = new String("Javascript");
+        document.write('字符串e的值: ' + e);
+        document.write('<br>');
+        document.write('字符串f的值: ' + f);
+        document.write('<br>');
+        document.write('通过函数concat()把e和f连接起来: ' + e.concat(f));
+        document.write('<br><br>');
+
+        //示例 5 : 子字符串出现的位置
+        document.write('示例 5 : 子字符串出现的位置<br>');
+        var g = new String("Hello JavaScript");
+        document.write('字符串g的值: ' + g);
+        document.write('<br>');
+        document.write('通过 indexOf ("a")获取子字符"a" 第一次出现的位置 ' + g.indexOf("a"));
+        document.write('<br>');
+        document.write('通过 lastIndexOf ("a")获取子字符"a" 最后出现的位置 ' + g.lastIndexOf("a"));
+        document.write('<br><br>');
+
+        //示例 6 : 比较两段字符串是否相同
+        document.write('示例 6 : 比较两段字符串是否相同<br>');
+        var x = new String("Hello");
+        var y = new String("Hello");
+        var z = new String("aloha");
+
+        document.write('字符串x的值: ' + x);
+        document.write('<br>');
+        document.write('字符串y的值: ' + y);
+        document.write('<br>');
+        document.write('字符串z的值: ' + z);
+        document.write('<br>');
+
+        document.write('通过 localeCompare()判断 x和y是否相等 ' + x.localeCompare(y));
+        document.write('<br>');
+        document.write('通过 localeCompare()判断 x和z是否相等 ' + x.localeCompare(z));
+        document.write('<br>');
+
+        document.write('0 表示相等<br>');
+        document.write('1 表示字母顺序靠后<br>');
+        document.write('-1 表示字母顺序靠前<br>');
+        document.write('<br><br>');
     </script>
 </head>
 
 <body>
-
-    <style>
-        input {
-            width: 50px;
-        }
-    </style>
-    <input type="text" id="num1"> *
-
-    <input type="text" id="num2"> =
-    <input type="text" id="result">
-
-    <input type="button" value="运算" onclick="addCalc()">
 </body>
 
 </html>
