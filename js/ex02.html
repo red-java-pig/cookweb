@@ -4,16 +4,28 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>ex02</title>
+    <script>
+        //示例 1 : script标签 
+        document.write('示例1<br>');
+        document.write("这是 javascript");
+        document.write('<br><br>');
+
+        //示例 2 : javascript顺序执行
+        document.write('示例2<br>');
+    </script>
+    <script>
+        document.write("第一段javascript");
+    </script>
+    <script>
+        document.write("第二段javascript");
+        document.write('<br><br>');
+        document.write('示例3<br>');
+    </script>
+    <!--示例 3 : 使用外部js文件 -->
+    <script src="hello.js"></script>
 </head>
 
 <body>
-    
-    <button onclick="document.getElementById('text').style.display='none'">隐藏文本</button>
-
-    <button onclick="document.getElementById('text').style.display='block'">显示文本</button>
-
-    <p id="text"> 这个是一段可以被javascript隐藏的文本</p>
-
 </body>
 
 </html>
