@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ex53</title>
+    <script>
+        function addCalc() {
+            var v1 = parseInt(document.getElementById("num1").value);
+            var v2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = (v1 * v2).toExponential();
+        }
+    </script>
+</head>
+
+<body>
+
+    <style>
+        input {
+            width: 50px;
+        }
+    </style>
+    <input type="text" id="num1"> *
+
+    <input type="text" id="num2"> =
+    <input type="text" id="result">
+
+    <input type="button" value="运算" onclick="addCalc()">
+</body>
+
+</html>
