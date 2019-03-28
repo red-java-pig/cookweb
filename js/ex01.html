@@ -4,15 +4,21 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>ex01</title>
+    <script>
+        //示例 1 : 通过javascript向文档中输出文本 
+        document.write('示例1<br>');
+        document.write("Hello Javascript");
+        document.write('<br><br>');
+
+        document.write('示例2<br>');
+    </script>
 </head>
 
 <body>
-
-    <script>
-        //单行注释
-        document.write("Hello Javascript");
-    </script>
-
+    <!--示例 2 : javascript和DOM结合的一个简单例子 -->
+    <button onclick="document.getElementById('text').style.display='none'">隐藏文本</button>
+    <button onclick="document.getElementById('text').style.display='block'">显示文本</button>
+    <p id="text"> 这个是一段可以被javascript隐藏的文本</p>
 </body>
 
 </html>
